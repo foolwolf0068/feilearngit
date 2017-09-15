@@ -16,7 +16,7 @@ def gcd1(x, y):
 def mingbs(x, y):
     return int(x*y/gcd1(x,y))
 
-print(gcd1(65,25))
+# print(gcd1(65,25))
 
 
 def mingbs1(list1):
