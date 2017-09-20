@@ -7,7 +7,8 @@ Created on Wed Aug 30 17:59:14 2017
 """
 
 import urllib.request
-response = urllib.request.urlopen("http://www.fishc.com")
+path_name = "http://www.cqu.edu.cn"
+response = urllib.request.urlopen(path_name)
 html = response.read()
 html = html.decode("utf-8")
 print(html)

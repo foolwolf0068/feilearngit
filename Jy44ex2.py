@@ -55,8 +55,15 @@ class MyTimer():
         self.begin = 0
         self.end = 0
 
-t1 = MyTimer()
+def main():
+    
+    t1 = MyTimer()
+    print(t1)
+    t1.start()
+    print(t1)
 
+    t1.stop()
+    print(t1)
 
-t1.stop()
-print(t1)
+if __name__ == "__main__":
+    main()

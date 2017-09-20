@@ -17,13 +17,17 @@ class Countlist:
     def __getitem__(self,key):
         self.count[key] += 1
         return self.values[key]
-    
-c1 = Countlist(1,3,5,7,9)
-c2 = Countlist(2,4,6,8,10)
+def main():    
+    c1 = Countlist(1,3,5,7,9)
+    c2 = Countlist(2,4,6,8,10)
 
-print(c1[1])
-print(c2[1])
-print(c1[1]+c2[2])
-print(c1.count)
-print(c1[1])
-print(c1.count)
+    print(c1[1])
+    print(c2[1])
+    print(c1[1]+c2[2])
+    print(c1.count)
+    print(c1[1])
+    print(c1.count)
+
+
+if __name__ == "__main__":
+    main()

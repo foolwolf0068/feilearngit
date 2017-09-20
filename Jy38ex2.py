@@ -38,14 +38,6 @@ class Shark(Fish):
         else:
             print("I am full...")
 
-fish = Fish()
-fish.move()
-goldfish=Goldfish()
-goldfish.move()
-shark= Shark()
-shark.eat()
-shark.eat()
-
 class Base1:
     def foo1(self):
         print("This foo1 belongs to base1.")
@@ -56,7 +48,19 @@ class Base2:
         
 class Base3(Base1,Base2):
     pass
+def main():
+    fish = Fish()
+    fish.move()
+    goldfish=Goldfish()
+    goldfish.move()
+    shark= Shark()
+    shark.eat()
+    shark.eat()
 
-b=Base3()
-b.foo1()
-b.foo2()
+
+
+    b=Base3()
+    b.foo1()
+    b.foo2()
+if __name__ == "__main__":
+    main()

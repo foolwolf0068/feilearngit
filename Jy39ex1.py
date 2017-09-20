@@ -5,7 +5,7 @@ Created on Sun Aug 27 14:59:13 2017
 
 @author: foolwolf0068
 """
-
+#1
 class Turtle:
     def __init__(self,x):
         self.x = x
@@ -21,20 +21,25 @@ class Pool:
     
     def printnum(self):
         print("In the pool,there are",self.turtle.x,"turtles and",self.fish.y,"fishes.")
-
-pool = Pool(2,10)
-pool.printnum()
-
+# Jy40
 class C:
     count = 0
-    
 
-a = C()
-b = C()
-c = C()
-c.count += 10
-C.count += 100
-print("a.count=",a.count)
-print("b.count=",b.count)
-print("c.count=",c.count)
-print("C.count=",C.count)
+def main():
+    # 1
+    pool = Pool(2,10)
+    pool.printnum()
+        
+    # 2
+    a = C()
+    b = C()
+    c = C()
+    c.count += 10
+    C.count += 100
+    print("a.count=",a.count)
+    print("b.count=",b.count)
+    print("c.count=",c.count)
+    print("C.count=",C.count)
+
+if __name__ == "__main__":
+    main()

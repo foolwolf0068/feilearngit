@@ -18,23 +18,28 @@ class C:
         
     def delSize(self):
         del self.size
-    x=property(getSize,setSize,delSize)
+    x = property(getSize,setSize,delSize)
 
+def main():
+    c = C()
+    c.x = 1
+    print(c.x)
+    print(c.size)
 
-c = C()
-print(c.x)
+    def Fibs(n):
+        if n == 1:
+            return 1
+        elif n == 2:
+            return 2
+        else:
+            c = Fibs(n-1) + Fibs(n-2)
+            return (int(c/2) if (c % 2) == 0 else c)
 
-def Fibs(n):
-    if n == 1:
-        return 1
-    elif n == 2:
-        return 2
-    else:
-        c = Fibs(n-1) + Fibs(n-2)
-        return (int(c/2) if (c % 2) == 0 else c)
+    def newfib(n):
+        return [Fibs(x) for x in range(1,n+1)]
 
-def newfib(n):
-    return [Fibs(x) for x in range(1,n+1)]
-
-print(newfib(12))
+    print(newfib(12))
         
+
+if __name__ == "__main__":
+    main()

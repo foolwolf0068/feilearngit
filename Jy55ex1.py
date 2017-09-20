@@ -9,7 +9,7 @@ Created on Thu Aug 31 01:27:40 2017
 import urllib.request
 import random
 
-url = 'https://www.whatismyip.com'
+url = "http://www.ip138.com/"
 
 iplist = ['111.62.251.130:8080','210.38.1.130:8080','120.199.224.79:80','111.13.7.42:81']
 

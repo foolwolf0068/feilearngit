@@ -55,7 +55,7 @@ def save_imgs(folder,img_addrs):
             img = url_open(each)
             f.write(img)
 
-def download_mm(folder="/Users/foolwolf0068/feilearngit/ooxx",pages = 10):
+def download_mm(folder="/Users/foolwolf0068/feilearngit/ooxx1",pages = 10):
     os.mkdir(folder)
     os.chdir(folder)
     

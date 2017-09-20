@@ -16,12 +16,16 @@ class child(Parent):
 class child1(Parent):
     def hello(self):
         print("child...")
-p=Parent()
+def main():
+    p=Parent()
 
-p.hello()
+    p.hello()
 
-c=child()
-c.hello()
+    c=child()
+    c.hello()
 
-c1=child1()
-c1.hello()    
+    c1=child1()
+    c1.hello()
+
+if __name__ == "__main__":
+    main()

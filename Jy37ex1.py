@@ -12,14 +12,18 @@ class Ball:
     def kick(self):
         print("my name is",self.name,",god,you kid me?")
         
-b= Ball('toudu')
-b.kick()
-c= Ball('toucu')
-c.kick()
-
 class person:
     name = "feige"
     
-d=person()
-print(d.name)
+def main():
+    b= Ball('toudu')
+    b.kick()
+    c= Ball('fanqie')
+    c.kick()
+    
+    d=person()
+    print(d.name)
+
+if __name__ == "__main__":
+    main()
         

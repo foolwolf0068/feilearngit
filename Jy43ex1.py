@@ -11,10 +11,14 @@ class int(int):
         return int.__sub__(self,other)
     '''def __sub__(self,other):
         return int.__add__(self,other)'''
-    
-a = int("5")
-print(a)
-b = int(3)
-print(b)
 
-print(a+b)
+def main():    
+    a = int("5")
+    print(a)
+    b = int(3)
+    print(b)
+
+    print(a+b)
+
+if __name__ == "__main__":
+    main()
